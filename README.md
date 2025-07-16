@@ -1,76 +1,55 @@
-# Awesome RLVR – Reinforcement Learning with **Verifiable** Rewards
+# Awesome RLVR — Reinforcement Learning with **Verifiable** Rewards
 
 [![Stars](https://img.shields.io/github/stars/opendilab/awesome-RLVR?style=flat-square&logo=github)](https://github.com/opendilab/awesome-RLVR/stargazers)
 [![Forks](https://img.shields.io/github/forks/opendilab/awesome-RLVR?style=flat-square&logo=github)](https://github.com/opendilab/awesome-RLVR/network/members)
 [![Contributors](https://img.shields.io/github/contributors/opendilab/awesome-RLVR?style=flat-square&logo=github)](https://github.com/opendilab/awesome-RLVR/graphs/contributors)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](./LICENSE)
 
-> A curated list of surveys, tutorials, codebases, and papers around  
-> **Reinforcement Learning with Verifiable Rewards (RLVR)** –  
-> an emerging paradigm that aligns LLMs *and* other agents through external verification, self-consistency and bootstrapped improvement.
+> A curated collection of surveys, tutorials, codebases and papers on  
+> **Reinforcement Learning with Verifiable Rewards (RLVR)**—  
+> a rapidly emerging paradigm that aligns both LLMs *and* other agents through  
+> external verification, self-consistency and iterative self-improvement.
 
----
+<p align="center">
+  <img
+    src="./assets/rft.png"
+    style="border-radius:0.3125em;
+           box-shadow:0 2px 4px rgba(34,36,38,.12),
+                      0 2px 10px rgba(34,36,38,.08);" />
+  <br/>
+  <em>
+    Core techniques powering reasoning LLMs, where verifiable rewards are pivotal.  
+    (Figure taken from <a href="https://arxiv.org/pdf/2502.17419">
+    “From System 1 to System 2: A Survey of Reasoning Large Language Models”</a>)
+  </em>
+</p>
 
 ## Why RLVR?
 
-* **External, objective rewards** – unit tests, formal checkers, fact-checkers, etc.  
-* **Built-in safety & auditability** – every reward is traceable to a verifier.  
-* **Bootstrapped self-improvement** – agents can refine their own verifiers.  
-* **Domain-agnostic** – code generation, theorem proving, robotics, games …
+* **Objective, external rewards** — unit tests, formal checkers, fact-checkers, etc.  
+* **Built-in safety & auditability** — every reward is traceable to a verifier.  
+* **Self-bootstrapping** — agents can iteratively refine their own verifiers.  
+* **Domain-agnostic** — applies to code generation, theorem proving, robotics, games and more.  
 
 ## How does it work?
 
-1. **Policy** proposes one or more candidate outputs.  
-2. **Verifier** (independent or learned) checks each output.  
-3. **Reward** is emitted & the policy is updated via RL (e.g. PPO).  
-4. *Optionally* the verifier itself is trained or hardened over time.
+1. **Policy** generates one or more candidate outputs.  
+2. An independent **Verifier** evaluates each candidate.  
+3. A **Reward** is produced, and the policy is updated via RL (e.g., PPO).  
+4. *(Optional)* The verifier itself is trained or hardened over time.
 
-<details>
-<summary>▶ Show RLVR training loop diagram</summary>
+Pull requests are welcome 🎉 — see [Contributing](#contributing) for guidelines.
 
-<!-- self-contained, responsive SVG -->
-<div align="center" role="img" aria-label="RLVR training loop">
-  <svg viewBox="0 0 800 400" width="100%" height="auto">
-    <rect x="50" y="160" width="180" height="80" fill="#3b82f6" rx="10"/>
-    <text x="140" y="205" text-anchor="middle" font-size="16" fill="#fff">Policy (LLM)</text>
-
-    <rect x="300" y="40" width="200" height="120" fill="#10b981" rx="10"/>
-    <text x="400" y="100" text-anchor="middle" font-size="16" fill="#fff">Environment / Task</text>
-
-    <rect x="300" y="240" width="200" height="120" fill="#f97316" rx="10"/>
-    <text x="400" y="300" text-anchor="middle" font-size="16" fill="#fff">Verifier</text>
-
-    <defs>
-      <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-        <path d="M0,0 L0,6 L9,3 z" fill="#444"/>
-      </marker>
-    </defs>
-
-    <line x1="230" y1="200" x2="300" y2="100" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
-    <text x="265" y="140" text-anchor="middle" font-size="14">Action</text>
-
-    <line x1="400" y1="160" x2="400" y2="240" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
-    <text x="417" y="205" font-size="14">Output</text>
-
-    <line x1="300" y1="300" x2="230" y2="200" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
-    <text x="265" y="270" text-anchor="middle" font-size="14">Reward</text>
-  </svg>
-</div>
-
-</details>
-
-
-Pull requests are welcome 🎉 — see [Contributing](#contributing) for details.
-
+---
 
 <pre>
-<font color="red">[2025-07-03] <b>New!</b> Initial public release of Awesome-RLVR 🎉</font>
+[2025-07-03] <b>New!</b> Initial public release of Awesome-RLVR 🎉
 </pre>
 
 
 ## Table of Contents
 
-- [Awesome RLVR – Reinforcement Learning with **Verifiable** Rewards](#awesome-rlvr--reinforcement-learning-with-verifiable-rewards)
+- [Awesome RLVR — Reinforcement Learning with **Verifiable** Rewards](#awesome-rlvr--reinforcement-learning-with-verifiable-rewards)
   - [Why RLVR?](#why-rlvr)
   - [How does it work?](#how-does-it-work)
   - [Table of Contents](#table-of-contents)
@@ -353,6 +332,16 @@ format:
   - Key: prospect-theoretic objective for alignment  
   - ExpEnv: alignment evaluation suites  
 
+- [UI-R1: Enhancing Efficient Action Prediction of GUI Agents by Reinforcement Learning](https://arxiv.org/pdf/2503.21620)  
+  - Zhengxi Lu, Yuxiang Chai, Yaxuan Guo, Xi Yin, Liang Liu, Hao Wang, Han Xiao, Shuai Ren, Guanjing Xiong, Hongsheng Li  
+  - Key: rule-based rewards, GRPO, multimodal LLM, GUI grounding & action, data-efficient RFT (136 samples)  
+  - ExpEnv: ScreenSpot, ScreenSpot-Pro, AndroidControl  
+
+- [GUI-R1: A Generalist R1-Style Vision-Language Action Model for GUI Agents](https://arxiv.org/pdf/2504.10458)  
+  - Run Luo, Lu Wang, Wanwei He, Xiaobo Xia  
+  - Key: unified action space, GRPO, high-level GUI tasks, cross-platform (Win/Linux/Mac/Android/Web), data-efficient RFT (3 K samples)  
+  - ExpEnv: ScreenSpot, ScreenSpot-Pro, GUI-Act-Web, OmniAct-Web, OmniAct-Desktop, AndroidControl-Low/High, GUI-Odyssey
+  
 ### 2024 & Earlier
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/pdf/2305.18290) (ICLR 2024)  
   - Rafael Raffel *et al.*  
