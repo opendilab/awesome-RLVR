@@ -8,7 +8,8 @@
 > A curated collection of surveys, tutorials, codebases and papers on  
 > **Reinforcement Learning with Verifiable Rewards (RLVR)**—  
 > a rapidly emerging paradigm that aligns both LLMs *and* other agents through  
-> external verification, self-consistency and iterative self-improvement.
+> **objective, externally verifiable signals.**
+<!-- > external verification, self-consistency and iterative self-improvement. -->
 
 <!-- <p align="center">
   <img
@@ -57,14 +58,15 @@ RLVR couples reinforcement learning with **objective, externally verifiable sign
 3. **Rewarding.**  
    • If a completion is verifiably correct, it receives a reward \( r = \gamma \).  
    • Otherwise the reward is \( r = 0 \).  
-4. **Policy update.** Using the rewards, we update the policy parameters with Proximal Policy Optimization (PPO).  
+4. **Policy update.** Using the rewards, we update the policy parameters via RL (e.g., PPO).  
 5. **(Optional) Verifier refinement.** The verifier itself can be trained, hardened, or expanded to cover new edge cases.
 
 Through repeated iterations of this loop, the policy learns to maximise the externally verifiable reward while maintaining a clear audit trail for every decision it makes.
 
+---
+
 Pull requests are welcome 🎉 — see [Contributing](#contributing) for guidelines.
 
----
 
 <pre>
 [2025-07-03] <b>New!</b> Initial public release of Awesome-RLVR 🎉
