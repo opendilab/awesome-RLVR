@@ -10,7 +10,7 @@
 > a rapidly emerging paradigm that aligns both LLMs *and* other agents through  
 > external verification, self-consistency and iterative self-improvement.
 
-<p align="center">
+<!-- <p align="center">
   <img
     src="./assets/rft.png"
     style="border-radius:0.3125em;
@@ -22,21 +22,45 @@
     (Figure taken from <a href="https://arxiv.org/pdf/2502.17419">
     “From System 1 to System 2: A Survey of Reasoning Large Language Models”</a>)
   </em>
+</p> -->
+
+<p align="center">
+  <img
+    src="./assets/rlvr.png"
+    style="border-radius:0.3125em;
+           box-shadow:0 2px 4px rgba(34,36,38,.12),
+                      0 2px 10px rgba(34,36,38,.08);" />
+  <br/>
+  <em>
+    An overview of how Reinforcement Learning with Verifiable Rewards (RLVR) works.  
+    (Figure taken from <a href="https://arxiv.org/pdf/2411.15124">
+    “Tülu 3: Pushing Frontiers in
+Open Language Model Post-Training”</a>)
+  </em>
 </p>
 
 ## Why RLVR?
 
-* **Objective, external rewards** — unit tests, formal checkers, fact-checkers, etc.  
-* **Built-in safety & auditability** — every reward is traceable to a verifier.  
-* **Self-bootstrapping** — agents can iteratively refine their own verifiers.  
-* **Domain-agnostic** — applies to code generation, theorem proving, robotics, games and more.  
+RLVR couples reinforcement learning with **objective, externally verifiable signals**, yielding a training paradigm that is simultaneously powerful and trustworthy:
+
+* **Ground-truth rewards** – unit tests, formal proofs, or fact-checkers provide binary, tamper-proof feedback.  
+* **Intrinsic safety & auditability** – every reward can be traced back to a transparent verifier run, simplifying debugging and compliance.  
+* **Strong generalization** – models trained on verifiable objectives tend to extrapolate to unseen tasks with minimal extra data.  
+* **Emergent “aha-moments”** – sparse, high-precision rewards encourage systematic exploration that often yields sudden surges in capability when the correct strategy is discovered.  
+* **Self-bootstrapping improvement** – the agent can iteratively refine or even generate new verifiers, compounding its own learning signal.  
+* **Domain-agnostic applicability** – the same recipe works for code generation, theorem proving, robotics, games, and more.
 
 ## How does it work?
 
-1. **Policy** generates one or more candidate outputs.  
-2. An independent **Verifier** evaluates each candidate.  
-3. A **Reward** is produced, and the policy is updated via RL (e.g., PPO).  
-4. *(Optional)* The verifier itself is trained or hardened over time.
+1. **Sampling.** We draw one or more candidate completions \( {a}_{1..k} \) from a policy model \( \pi_\theta \) given a prompt \( s \).  
+2. **Verification.** A deterministic function \( r(s,{a}) \) checks each completion for correctness.  
+3. **Rewarding.**  
+   • If a completion is verifiably correct, it receives a reward \( r = \gamma \).  
+   • Otherwise the reward is \( r = 0 \).  
+4. **Policy update.** Using the rewards, we update the policy parameters with Proximal Policy Optimization (PPO).  
+5. **(Optional) Verifier refinement.** The verifier itself can be trained, hardened, or expanded to cover new edge cases.
+
+Through repeated iterations of this loop, the policy learns to maximise the externally verifiable reward while maintaining a clear audit trail for every decision it makes.
 
 Pull requests are welcome 🎉 — see [Contributing](#contributing) for guidelines.
 
@@ -152,6 +176,11 @@ format:
   - MIT CSAIL & collaborators  
   - Key: large-scale RL for autonomous agent refinement  
   - ExpEnv: simulated dialogue & tool-use agents
+
+- [Reinforcement Learning from Verifiable Rewards](https://labelstud.io/blog/reinforcement-learning-from-verifiable-rewards/) (Blog 2025)  
+  - Key: Uses binary, verifiable reward functions to inject precise, unbiased learning signals into RL pipelines for math, code, and other accuracy-critical tasks.  
+  - ExpEnv: Easily reproducible in Jupyter notebooks or any RL setup by plugging in auto-grading tools such as compilers, unit tests, or schema validators.  
+
 
 ## Codebases
 
@@ -326,6 +355,17 @@ format:
   - DeepSeek-AI  
   - Key: proof-assistant feedback, Monte-Carlo Tree Search  
   - ExpEnv: Lean theorem-proving benchmarks  
+
+- [Tülu 3: Pushing Frontiers in Open Language Model Post-Training](https://arxiv.org/pdf/2411.15124) (arXiv) 
+  - Nathan Lambert, Jacob Morrison, Valentina Pyatkin, Shengyi Huang, Hamish Ivison, Faeze Brahman, Lester James V. Miranda, Alisa Liu, Nouha Dziri, Xinxi Lyu, Yuling Gu, Saumya Malik, Victoria Graf, Jena D. Hwang, Jiangjiang Yang, Ronan Le Bras, Øyvind Tafjord, Chris Wilhelm, Luca Soldaini, Noah A. Smith, Yizhong Wang, Pradeep Dasigi, Hannaneh Hajishirzi  
+  - Key: post-training, supervised finetuning (SFT), Direct Preference Optimization (DPO), RLVR, open LLMs  
+  - ExpEnv: multi-task language-model benchmarks (Tülu 3 Eval, decontaminated standard suites)  
+
+
+- [Kimi k1.5: Scaling Reinforcement Learning with LLMs](https://arxiv.org/abs/2501.12599) (arXiv) 
+  - Kimi Team – Angang Du, Bofei Gao, Bowei Xing, Changjiu Jiang, Cheng Chen, Cheng Li, … , Zongyu Lin  
+  - Key: RL with LLMs, long-context scaling, policy optimization, long2short CoT, multi-modal reasoning  
+  - ExpEnv: AIME, MATH 500, Codeforces, MathVista, LiveCodeBench
 
 - [Model Alignment as Prospect Theoretic Optimization](https://arxiv.org/pdf/2402.01306) (arXiv)  
   - Stanford University, Contextual AI. 
