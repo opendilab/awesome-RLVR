@@ -99,6 +99,9 @@ format:
 
 ## Surveys & Tutorials
 
+<details open>
+  <summary>Click to expand / collapse</summary>
+
 - [Inference-Time Techniques for LLM Reasoning](https://rdi.berkeley.edu/adv-llm-agents/slides/inference_time_techniques_lecture_sp25.pdf) (Berkeley Lecture 2025)  
   - DeepMind & UC Berkeley (Xinyun Chen)  
   - Key: decoding-time search, self-consistency, verifier pipelines  
@@ -183,25 +186,39 @@ format:
   - Key: Uses binary, verifiable reward functions to inject precise, unbiased learning signals into RL pipelines for math, code, and other accuracy-critical tasks.  
   - ExpEnv: Easily reproducible in Jupyter notebooks or any RL setup by plugging in auto-grading tools such as compilers, unit tests, or schema validators.  
 
+</details>
 
 ## Codebases
 
-| Project | Description |
-|---------|-------------|
-| [**open-r1**](https://github.com/huggingface/open-r1) | Fully open reproduction of the DeepSeek-R1 pipeline (SFT → GRPO → evaluation). |
-| [**OpenRLHF**](https://github.com/OpenRLHF/OpenRLHF) | An Easy-to-use, Scalable and High-performance RLHF Framework based on Ray (PPO & GRPO & REINFORCE++ & vLLM & Ray & Dynamic Sampling & Async Agentic RL) |
-| [**verl**](https://github.com/volcengine/verl) | Volcano Engine reinforcement-learning framework; supports APPO, GRPO, TPPO. |
-| [**TinyZero**](https://github.com/Jiayi-Pan/TinyZero) | ~200-line minimal reproduction of DeepSeek R1-Zero; 4 × RTX 4090 is enough for a 0.5 B LLM. |
-| [**PRIME**](https://github.com/PRIME-RL/PRIME) | Efficient RL-VR (value/reward) training stack for reasoning LLMs. |
-| [**simpleRL-reason**](https://github.com/hkust-nlp/simpleRL-reason) | Minimal, didactic RL-VR trainer for reasoning research. |
-| [**rllm**](https://github.com/agentica-project/rllm) | General-purpose “RL-for-LLM” toolbox (algos, logging, evaluators). |
-| [**OpenR**](https://github.com/openreasoner/openr) | Modular framework for advanced reasoning (process supervision, MCTS, verifier RMs). |
-| [**Open-Reasoner-Zero**](https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero) | a self-play “Zero-RL” framework focused on advanced mathematical / coding reasoning.  Includes process-supervision data pipelines, verifier-based dense rewards, and async multi-agent RL training scripts. |
-| [**ROLL**](https://github.com/alibaba/ROLL) |  An Efficient and User-Friendly Scaling Library for Reinforcement Learning with Large Language Models |
+
+<details open>
+  <summary>Click to expand / collapse</summary>
+
+| Project | Stars | Description |
+|---------|:------:|-------------|
+| [**open-r1**](https://github.com/huggingface/open-r1) | [![Stars](https://img.shields.io/github/stars/huggingface/open-r1?style=flat-square&logo=github)](https://github.com/huggingface/open-r1/stargazers) | Fully open reproduction of the DeepSeek-R1 pipeline (SFT, distillation, GRPO, evaluation) |
+| [**OpenRLHF**](https://github.com/OpenRLHF/OpenRLHF) | [![Stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=flat-square&logo=github)](https://github.com/OpenRLHF/OpenRLHF/stargazers) | An Easy-to-use, Scalable and High-performance RLHF Framework based on Ray (PPO & GRPO & REINFORCE++ & vLLM & Ray & Dynamic Sampling & Async Agentic RL)* |
+| [**verl**](https://github.com/volcengine/verl) | [![Stars](https://img.shields.io/github/stars/volcengine/verl?style=flat-square&logo=github)](https://github.com/volcengine/verl/stargazers)  | a flexible, efficient and production-ready RL training library for large language models |
+| [**TinyZero**](https://github.com/Jiayi-Pan/TinyZero) |  [![Stars](https://img.shields.io/github/stars/Jiayi-Pan/TinyZero?style=flat-square&logo=github)](https://github.com/Jiayi-Pan/TinyZero/stargazers) | Minimal reproduction of DeepSeek R1-Zero |
+| [**AReaL**](https://github.com/inclusionAI/AReaL) |  [![Stars](https://img.shields.io/github/stars/inclusionAI/AReaL?style=flat-square&logo=github)](https://github.com/inclusionAI/AReaL/stargazers) | Ant Reasoning Reinforcement Learning for LLMs |
+| [**RAGEN**](https://github.com/RAGEN-AI/RAGEN) |  [![Stars](https://img.shields.io/github/stars/RAGEN-AI/RAGEN?style=flat-square&logo=github)](https://github.com/RAGEN-AI/RAGEN/stargazers) | RAGEN (Reasoning AGENt, pronounced like "region") leverages reinforcement learning (RL) to train LLM reasoning agents in interactive, stochastic environments. |
+| [**Open-Reasoner-Zero**](https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero) |  [![Stars](https://img.shields.io/github/stars/Open-Reasoner-Zero/Open-Reasoner-Zero?style=flat-square&logo=github)](https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/stargazers) | one open source implementation of large-scale reasoning-oriented RL training focusing on scalability, simplicity and accessibility |
+| [**PRIME**](https://github.com/PRIME-RL/PRIME) |  [![Stars](https://img.shields.io/github/stars/PRIME-RL/PRIME?style=flat-square&logo=github)](https://github.com/PRIME-RL/PRIME/stargazers) | PRIME (Process Reinforcement through IMplicit REwards), an open-source solution for online RL with process rewards |
+| [**rllm**](https://github.com/agentica-project/rllm) |  [![Stars](https://img.shields.io/github/stars/agentica-project/rllm?style=flat-square&logo=github)](https://github.com/agentica-project/rllm/stargazers) | an open-source framework for post-training language agents via reinforcement learning |
+| [**ROLL**](https://github.com/alibaba/ROLL) |  [![Stars](https://img.shields.io/github/stars/alibaba/ROLL?style=flat-square&logo=github)](https://github.com/alibaba/ROLL/stargazers) | an Efficient and User-Friendly Scaling Library for Reinforcement Learning with Large Language Models |
+| [**slime**](https://github.com/THUDM/slime) |  [![Stars](https://img.shields.io/github/stars/THUDM/slime?style=flat-square&logo=github)](https://github.com/THUDM/slime/stargazers) | an LLM post-training framework for RL scaling with high-performance training and flexible data generation|
+| [**Nemo-Aligner**](https://github.com/NVIDIA/NeMo-Aligner) |  [![Stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=flat-square&logo=github)](https://github.com/NVIDIA/NeMo-Aligner/stargazers) | Scalable toolkit for efficient model alignment |
+
+
+</details>
+
 
 ## Papers
 
 ### 2025
+
+<details open>
+  <summary>Click to expand / collapse</summary>
 
 - [Brain Bandit: A Biologically Grounded Neural Network for Efficient Control of Exploration](https://openreview.net/forum?id=RWJX5F5I9g)  
   - Chen Jiang, Jiahui An, Yating Liu, Ni Ji  
@@ -383,8 +400,14 @@ format:
   - Run Luo, Lu Wang, Wanwei He, Xiaobo Xia  
   - Key: unified action space, GRPO, high-level GUI tasks, cross-platform (Win/Linux/Mac/Android/Web), data-efficient RFT (3 K samples)  
   - ExpEnv: ScreenSpot, ScreenSpot-Pro, GUI-Act-Web, OmniAct-Web, OmniAct-Desktop, AndroidControl-Low/High, GUI-Odyssey
-  
+
+ </details>
+
 ### 2024 & Earlier
+
+<details open>
+  <summary>Click to expand / collapse</summary>
+
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/pdf/2305.18290) (ICLR 2024)  
   - Rafael Raffel *et al.*  
   - Key: preference optimisation without RL, DPO objective  
@@ -410,7 +433,7 @@ format:
   - Key: PPO-based RLHF, instruction-following alignment  
   - ExpEnv: broad instruction-following tasks (InstructGPT)  
 
-
+</details>
 
 ## Other Awesome Lists
 
