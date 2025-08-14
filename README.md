@@ -208,6 +208,7 @@ format:
 | [**ROLL**](https://github.com/alibaba/ROLL) |  [![Stars](https://img.shields.io/github/stars/alibaba/ROLL?style=flat-square&logo=github)](https://github.com/alibaba/ROLL/stargazers) | an Efficient and User-Friendly Scaling Library for Reinforcement Learning with Large Language Models |
 | [**slime**](https://github.com/THUDM/slime) |  [![Stars](https://img.shields.io/github/stars/THUDM/slime?style=flat-square&logo=github)](https://github.com/THUDM/slime/stargazers) | an LLM post-training framework for RL scaling with high-performance training and flexible data generation|
 | [**Nemo-Aligner**](https://github.com/NVIDIA/NeMo-Aligner) |  [![Stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=flat-square&logo=github)](https://github.com/NVIDIA/NeMo-Aligner/stargazers) | Scalable toolkit for efficient model alignment |
+| [**Trinity-RFT**](https://github.com/modelscope/Trinity-RFT) |  [![Stars](https://img.shields.io/github/stars/modelscope/Trinity-RFT?style=flat-square&logo=github)](https://github.com/modelscope/Trinity-RFT/stargazers) | A unified RFT framework with plug-and-play modules (for algorithms, data pipelines, and synchronization) |
 
 
 </details>
