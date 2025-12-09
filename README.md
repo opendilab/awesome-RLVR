@@ -221,6 +221,46 @@ format:
 <details open>
   <summary>Click to expand / collapse</summary>
 
+- [AgentPRM: Process Reward Models for LLM Agents via Step-Wise Promise and Progress](https://arxiv.org/abs/2511.08325)
+  - Zhiheng Xi, Chenyang Liao, Guanyu Li, Yajie Yang, Wenxiang Chen, Zhihao Zhang, Binghai Wang, Senjie Jin, Yuhao Zhou, Jian Guan, Wei Wu, Tao Ji, Tao Gui, Qi Zhang, Xuanjing Huang
+  - Key: Process Reward Models (PRM), Agentic Tasks, Generalized Advantage Estimation (GAE), Promise, Progress
+  - ExpEnv: WebShop, HotpotQA (Agent setting), Interactive Environments
+
+- [Towards Agentic Self-Learning LLMs in Search Environment](https://arxiv.org/abs/2510.14253)
+  - Wangtao Sun, Xiang Cheng, Jialin Fan, Xing Yu, Yao Xu, Shizhu He, Jun Zhao, Kang Liu
+  - Key: Self-Learning, Co-Evolution, Generative Reward Model (GRM), Search Agents
+  - ExpEnv: NQ, TriviaQA, HotpotQA, 2WikiMultiHopQA, Qwen-2.5-7B-Instruct
+
+- [Reinforcement Learning with Verifiable yet Noisy Rewards under Imperfect Verifiers](https://arxiv.org/abs/2510.00915)
+  - Xin-Qiang Cai, Wei Wang, Feng Liu, Tongliang Liu, Gang Niu, Masashi Sugiyama
+  - Key: Noisy Rewards, Verifier Hacking, Forward/Backward Correction, GRPO, Reference-Free RL
+  - ExpEnv: GSM8K, MATH, Qwen2.5-Math-7B
+
+- [Language Models that Think, Chat Better](https://arxiv.org/abs/2509.20357)
+  - Adithya Bhaskar, Xi Ye, Danqi Chen
+  - Key: Long CoT Reasoning, Large Language Models, GRPO, SFT
+  - ExpEnv: WildBench, AlpacaEval2, ArenaHardV2, CreativeWritingV3, IFBench, MMLU-Redux, PopQA
+
+- [RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments](https://arxiv.org/abs/2511.07317)
+  - Zhiyuan Zeng, Qinyuan Cheng, Zhangyue Yin, Yefei He, Jinpeng Wang, et al.
+  - Key: Adaptive Environments, Verifiable Rewards, Environment Scaling, Curriculum Learning
+  - ExpEnv: RLVE-Gym
+    
+- [Game-RL: Synthesizing Multimodal Verifiable Game Data to Boost VLMs’ General Reasoning](https://openreview.net/pdf?id=e4FqU4SyHL)
+  - Jingqi Tong, Jixin Tang, Hangcheng Li, Yurong Mou, Ming Zhang, Jun Zhao, Yanbo Wen and Others  
+  - Key: Vision Language Model, Reasoning, Data Synthesis, Game Playing, Visual Question Answering, Data Sets or Data Repositories, Benchmarks
+  - ExpEnv: GameQA, CharXiv, MathVerse, MathVision, MathVista, MMBench, MMMU-Pro, MMMU
+ 
+- [MT-R1-Zero: Advancing LLM-based Machine Translation via R1-Zero-like Reinforcement Learning](https://aclanthology.org/2025.findings-emnlp.1015/) (EMNLP 2025 Findings)
+  - Zhaopeng Feng, Shaosheng Cao, Jiahan Ren, Jiayuan Su, Ruizhe Chen, Yan Zhang, Jian Wu, Zuozhu Liu
+  - Key: Machine Translation, Rule-metric Mixed Reward
+  - ExpEnv: BLEU, COMETKiwi, XCOMET
+
+- [Smart-Searcher: Incentivizing the Dynamic Knowledge Acquisition of LLMs via Reinforcement Learning](https://aclanthology.org/2025.findings-emnlp.731/) (EMNLP 2025 Findings)
+  - Huatong Song, Jinhao Jiang, Wenqing Tian, Zhipeng Chen, Yuhuan Wu, Jiahao Zhao, Yingqian Min, Xin Zhao, Lei Fang, Ji-Rong Wen
+  - Key: Retrieval-Augmented Generation (RAG), Reinforcement Learning, Internal vs External Knowledge, Dynamic Switching
+  - ExpEnv: Multi-hop QA benchmarks, Retrieval tasks
+
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](https://openreview.net/pdf?id=dYur3yabMj) (ICML 2025)
   - Tianzhe Chu, Yuexiang Zhai, Jihan Yang, Shengbang Tong, Saining Xie, Dale Schuurmans, Quoc V. Le, Sergey Levine, Yi Ma
   - Key: Reinforcement Learning, Supervised Fine-tuning, Generalization, Memorization
