@@ -189,6 +189,11 @@ format:
   - Key: large-scale RL for autonomous agent refinement  
   - Data Domain: simulated dialogue & tool-use agents
 
+- [Reinforcement Learning from Verifiable Rewards](https://rlvrbook.com/) (Book 2026)
+  - Kian Kyars
+  - Key: verifier design, outcome and process rewards, GRPO training signals, reward hacking, search/test-time verification, frontier RLVR, and agentic RLVR
+  - ExpEnv: math, code, proof, long-context QA, multimodal, and agentic verification examples
+
 - [Reinforcement Learning from Verifiable Rewards](https://labelstud.io/blog/reinforcement-learning-from-verifiable-rewards/) (Blog 2025)  
   - Key: Uses binary, verifiable reward functions to inject precise, unbiased learning signals into RL pipelines for math, code, and other accuracy-critical tasks.  
   - Data Domain: Easily reproducible in Jupyter notebooks or any RL setup by plugging in auto-grading tools such as compilers, unit tests, or schema validators.  
