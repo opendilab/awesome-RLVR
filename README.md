@@ -221,6 +221,7 @@ format:
 | [**rllm**](https://github.com/agentica-project/rllm) |  [![Stars](https://img.shields.io/github/stars/agentica-project/rllm?style=flat-square&logo=github)](https://github.com/agentica-project/rllm/stargazers) | an open-source framework for post-training language agents via reinforcement learning |
 | [**Nemo-Aligner**](https://github.com/NVIDIA/NeMo-Aligner) |  [![Stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=flat-square&logo=github)](https://github.com/NVIDIA/NeMo-Aligner/stargazers) | Scalable toolkit for efficient model alignment |
 | [**Trinity-RFT**](https://github.com/modelscope/Trinity-RFT) |  [![Stars](https://img.shields.io/github/stars/modelscope/Trinity-RFT?style=flat-square&logo=github)](https://github.com/modelscope/Trinity-RFT/stargazers) | A unified RFT framework with plug-and-play modules (for algorithms, data pipelines, and synchronization) |
+| [**HUD**](https://github.com/hud-evals/hud-python) |  [![Stars](https://img.shields.io/github/stars/hud-evals/hud-python?style=flat-square&logo=github)](https://github.com/hud-evals/hud-python/stargazers) | a toolkit for building RL environments with verifiable, task-based rewards for LLM agents (coding, browser, computer-use, robotics), runnable as both evals and RL training across any model |
 
 
 </details>
