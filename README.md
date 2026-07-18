@@ -221,6 +221,7 @@ format:
 | [**rllm**](https://github.com/agentica-project/rllm) |  [![Stars](https://img.shields.io/github/stars/agentica-project/rllm?style=flat-square&logo=github)](https://github.com/agentica-project/rllm/stargazers) | an open-source framework for post-training language agents via reinforcement learning |
 | [**Nemo-Aligner**](https://github.com/NVIDIA/NeMo-Aligner) |  [![Stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=flat-square&logo=github)](https://github.com/NVIDIA/NeMo-Aligner/stargazers) | Scalable toolkit for efficient model alignment |
 | [**Trinity-RFT**](https://github.com/modelscope/Trinity-RFT) |  [![Stars](https://img.shields.io/github/stars/modelscope/Trinity-RFT?style=flat-square&logo=github)](https://github.com/modelscope/Trinity-RFT/stargazers) | A unified RFT framework with plug-and-play modules (for algorithms, data pipelines, and synchronization) |
+| [**decypher-env**](https://github.com/juansebastianl/decypher-env) |  [![Stars](https://img.shields.io/github/stars/juansebastianl/decypher-env?style=flat-square&logo=github)](https://github.com/juansebastianl/decypher-env/stargazers) | An RL environment for AES-XTS inversion where the policy authors C++ solvers; sandboxed on-demand compilation, a verifiable Lagrangian/round-staircase reward, and adapters to Verifiers, GEM, SkyRL Gym, OpenEnv, ORS, and NeMo Gym |
 
 
 </details>
