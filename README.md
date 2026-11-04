@@ -86,6 +86,7 @@ Pull requests are welcome 🎉 — see [Contributing](#contributing) for guideli
     - [2026](#2026)
       - [ICML 2026](#icml-2026)
       - [ICLR 2026](#iclr-2026)
+      - [Other 2026 Papers](#other-2026-papers)
     - [2025](#2025)
       - [NeurIPS 2025](#neurips-2025)
       - [ICML 2025](#icml-2025)
@@ -515,6 +516,19 @@ format:
   - Zongqi Wang, Rui Wang, Yuchuan Wu, Yiyao Yu, Pinyi Zhang, et al.
   - Key: verifiable reward, reinforcement learning, rlvr, reward model, reward modeling
   - Data Domain: MT-Bench, AlpacaEval, RewardBench
+
+</details>
+
+#### Other 2026 Papers
+
+<details open>
+  <summary>Click to expand / collapse</summary>
+
+- [Teaching LLMs to Learn Tool Trialing and Execution through Environment Interaction](https://arxiv.org/abs/2601.12762)
+  - Xingjie Gao, Pengcheng Huang, Zhenghao Liu, Yukun Yan, Shuo Wang, Zulong Chen, Chen Qian, Ge Yu, Yu Gu
+  - Key: tool learning, agentic reinforcement learning, GRPO, trial-and-execution paradigm, environment interaction, generalization to unseen tools
+  - Data Domain: ToolHop, TMDB, StableToolBench
+  - Code: [NEUIR/ToolMaster](https://github.com/NEUIR/ToolMaster)
 
 </details>
 
