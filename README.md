@@ -518,6 +518,13 @@ format:
 
 </details>
 
+#### EMNLP 2026
+
+- [SPADER: Step-wise Peer Advantage with Diversity-Aware Exploration Rewards for Multi-Answer Question Answering](https://aclanthology.org/2026.emnlp-main.894/)
+  - Qiming Shi, Zhaolu Kang, Yunfan Zhou, Di Weng, Yingcai Wu
+  - Key: agentic RL, step-level credit assignment, multi-answer question answering
+  - Data Domain: QAMPARI, Mintaka, WebQSP, QUEST
+
 ### 2025
 
 #### NeurIPS 2025
