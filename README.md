@@ -1363,6 +1363,11 @@ format:
   - Key: step-checker, verifier RL, zero human labels  
   - Data Domain: GSM8K-Step, MATH-Step  
 
+- [RLTF: Reinforcement Learning from Unit Test Feedback](https://arxiv.org/abs/2307.04349) (TMLR 2023)  
+  - Tencent AI Lab, SCUT, UT Dallas (Jiate Liu *et al.*)  
+  - Key: online RL with multi-granularity unit test feedback (coarse pass/fail and fine-grained error-location rewards) for code generation  
+  - Data Domain: APPS, MBPP  
+
 - [Let’s Verify Step by Step](https://arxiv.org/pdf/2305.20050) (ICML 2023)  
   - OpenAI  
   - Key: verifier prompts, iterative self-improvement  
